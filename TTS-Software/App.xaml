@@ -1,0 +1,26 @@
+﻿<Application x:Class="TTS_Software.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TTS_Software"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             >
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="AccentColor">#FF3F3F46</Color> <!-- Midden-grijs -->
+            <Color x:Key="SecondaryColor">#FF71717A</Color> <!-- Lichtgrijs -->
+            <Color x:Key="HighlightColor">#FFA1A1AA</Color> <!-- Helder neutraal grijs -->
+            <Color x:Key="PanelColor">#E618181B</Color> <!-- Diep donkergrijs/blauw paneel -->
+            <Color x:Key="BackgroundColor">#CC010101</Color>
+            <sys:String x:Key="BackgroundMode">Zwart</sys:String>
+            <Color x:Key="HoverColor">#CC202020</Color>
+            <Color x:Key="TransparentBorderColor">#33FFFFFF</Color>
+            <Color x:Key="OuterFillStartColor">#80000000</Color>
+            <Color x:Key="OuterFillEndColor">#33000000</Color>
+
+            <SolidColorBrush x:Key="HitTestBackgroundBrush" Color="#01000000" />
+            <SolidColorBrush x:Key="PanelBrush" Color="{DynamicResource BackgroundColor}" />
+            <SolidColorBrush x:Key="HoverBrush" Color="{DynamicResource HoverColor}" />
+            <SolidColorBrush x:Key="TransparentBorderBrush" Color="{DynamicResource TransparentBorderColor}" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

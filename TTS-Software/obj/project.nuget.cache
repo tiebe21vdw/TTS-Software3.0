@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "xNeDZFU+dto=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Acer laptop\\Downloads\\TTS-Software3.0\\TTS-Software\\TTS-Software.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Acer laptop\\.nuget\\packages\\system.speech\\8.0.0\\system.speech.8.0.0.nupkg.sha512",
+    "C:\\Users\\Acer laptop\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.31\\microsoft.netcore.app.ref.8.0.31.nupkg.sha512",
+    "C:\\Users\\Acer laptop\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.31\\microsoft.windowsdesktop.app.ref.8.0.31.nupkg.sha512",
+    "C:\\Users\\Acer laptop\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.31\\microsoft.aspnetcore.app.ref.8.0.31.nupkg.sha512",
+    "C:\\Users\\Acer laptop\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.31\\microsoft.netcore.app.host.win-x64.8.0.31.nupkg.sha512",
+    "C:\\Users\\Acer laptop\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+  ],
+  "logs": []
+}

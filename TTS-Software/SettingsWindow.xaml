@@ -1,0 +1,88 @@
+﻿<Window x:Class="TTS_Software.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Instellingen"
+        Width="380"
+        Height="620"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Instellingen" FontSize="22" FontWeight="SemiBold" Margin="0,0,0,16" />
+
+        <StackPanel Grid.Row="1" Margin="0,0,0,12">
+            <TextBlock Text="Kleurthema" Margin="0,0,0,4" />
+            <ComboBox x:Name="ThemeComboBox" SelectedIndex="0" SelectionChanged="ThemeComboBox_SelectionChanged">
+                <ComboBoxItem Content="Default" />
+                <ComboBoxItem Content="Ocean" />
+                <ComboBoxItem Content="Sunset" />
+                <ComboBoxItem Content="Forest" />
+                <ComboBoxItem Content="Pink" />
+                <ComboBoxItem Content="Gold" />
+                <ComboBoxItem Content="Red" />
+                <ComboBoxItem Content="Brown" />
+            </ComboBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Margin="0,0,0,12">
+            <TextBlock Text="Achtergrond" Margin="0,0,0,4" />
+            <ComboBox x:Name="BackgroundComboBox" SelectedIndex="1" SelectionChanged="BackgroundComboBox_SelectionChanged">
+                <ComboBoxItem Content="Wit" />
+                <ComboBoxItem Content="Zwart" />
+                <ComboBoxItem Content="Systeem" />
+            </ComboBox>
+        </StackPanel>
+
+        <CheckBox x:Name="AutoStartCheckBox" Grid.Row="3" Content="Start de applicatie met Windows"
+                  Margin="0,0,0,10" Checked="AutoStartCheckBox_Changed" Unchecked="AutoStartCheckBox_Changed" />
+
+        <CheckBox x:Name="AutoReadCheckBox" Grid.Row="4" Content="Lees automatisch voor wat ik kopieer (Ctrl+C)"
+                  Margin="0,0,0,10" Checked="AutoReadCheckBox_Changed" Unchecked="AutoReadCheckBox_Changed" />
+
+        <CheckBox x:Name="AutoCopyCheckBox" Grid.Row="5" Content="Herkende tekst ook naar het klembord kopiëren"
+                  Margin="0,0,0,14" Checked="AutoCopyCheckBox_Changed" Unchecked="AutoCopyCheckBox_Changed" />
+
+        <StackPanel Grid.Row="6" Margin="0,0,0,12">
+            <TextBlock Text="Spreeksnelheid" Margin="0,0,0,4" />
+            <Slider x:Name="SpeechRateSlider" Minimum="0.5" Maximum="2" Value="1" TickFrequency="0.1"
+                    IsSnapToTickEnabled="True" ValueChanged="SpeechRateSlider_ValueChanged" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="7" Margin="0,0,0,12">
+            <TextBlock Text="Volume" Margin="0,0,0,4" />
+            <Slider x:Name="VolumeSlider" Minimum="0" Maximum="100" Value="100" TickFrequency="5"
+                    IsSnapToTickEnabled="True" ValueChanged="VolumeSlider_ValueChanged" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="8" Margin="0,0,0,4">
+            <TextBlock Text="Stem" Margin="0,0,0,4" />
+            <ComboBox x:Name="VoiceComboBox" SelectionChanged="VoiceComboBox_SelectionChanged" />
+            <TextBlock Text="Sneltoetsen: Ctrl+Alt+L begint met voorlezen (na selectie), Ctrl+Alt+S stopt direct."
+                       TextWrapping="Wrap" FontSize="11" Opacity="0.55" Margin="0,10,0,0" />
+        </StackPanel>
+
+        <Grid Grid.Row="10" Margin="0,14,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Content="Geschiedenis..." Width="120" HorizontalAlignment="Left"
+                    Click="HistoryButton_Click" />
+            <Button Grid.Column="1" Content="Sluiten" Width="90" IsDefault="True" Click="CloseButton_Click" />
+        </Grid>
+    </Grid>
+</Window>
