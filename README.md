@@ -33,7 +33,7 @@ Installatie & Bouwen
 
 Kloon de repository:
 
-git clone https://github.com/jouw-gebruikersnaam/jouw-repo-naam.git
+git clone https://github.com/tiebe21vdw/TTS-Software3.0.git
 
 Open het project:
 Open het .sln-bestand in Visual Studio.
